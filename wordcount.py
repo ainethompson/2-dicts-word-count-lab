@@ -1,4 +1,5 @@
 # put your code here.
+import sys
 
 def count_words(filename):
 
@@ -15,4 +16,4 @@ def count_words(filename):
     for word, count in word_counts.items():
         print(word, count)
 
-count_words("test.txt")
+count_words(filename = sys.argv[1])
